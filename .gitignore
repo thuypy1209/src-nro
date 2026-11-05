@@ -1,0 +1,25 @@
+# Build output & dependencies
+target/
+build/
+build_temp/
+*.class
+
+# Logs & temp files
+log/
+*.log
+*.bak
+*.tmp
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.iml
+
+# Analysis & Python cache
+graphify-out/
+__pycache__/
+*.pyc
+
+# OS files
+Thumbs.db
+.DS_Store
