@@ -364,6 +364,7 @@ public class Player {
     @Setter
     @Getter
     private ConfirmDialog confirmDialog;
+    public int vipPurchaseCount;
 
     public CollectionBook getCollectionBook() { return collectionBook; }
     public void setCollectionBook(CollectionBook collectionBook) { this.collectionBook = collectionBook; }
