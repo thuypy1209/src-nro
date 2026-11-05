@@ -1222,6 +1222,15 @@ public class Player {
     }
 
     public void dispose() {
+        if (itemsTradeWVP != null) {
+            if (!itemsTradeWVP.isEmpty()) {
+                for (Item item : itemsTradeWVP) {
+                    InventoryService.gI().addItemBag(this, item);
+                }
+            }
+            itemsTradeWVP.clear();
+            itemsTradeWVP = null;
+        }
         if (escortedBoss != null) {
             escortedBoss.stopEscorting();
         }

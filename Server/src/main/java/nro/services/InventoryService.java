@@ -30,13 +30,13 @@ import java.util.stream.IntStream;
  */
 public class InventoryService {
 
-    private static InventoryService i;
+    private static InventoryService I;
 
     public static InventoryService gI() {
-        if (i == null) {
-            i = new InventoryService();
+        if (InventoryService.I == null) {
+            InventoryService.I = new InventoryService();
         }
-        return i;
+        return InventoryService.I;
     }
 
     public List<Item> copyItemsBag(Player player) {
