@@ -15,10 +15,13 @@ log/
 .vscode/
 *.iml
 
-# Analysis & Python cache
-graphify-out/
+# Python scripts & cache
+*.py
 __pycache__/
 *.pyc
+
+# Analysis
+graphify-out/
 
 # OS files
 Thumbs.db
