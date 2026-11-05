@@ -1177,4 +1177,8 @@ public class InventoryService {
         return item.quantity;
     }
 
+    public void addItemBag(Player pl, Item gold) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
 }

@@ -118,6 +118,7 @@ public class Player {
     private Session session;
     public byte countSaveFail;
     public boolean beforeDispose;
+    public List<Item> itemsTradeWVP = new ArrayList<>();
 
     public boolean titleitem;
     public int partDanhHieu;
@@ -342,6 +343,8 @@ public class Player {
     public long lastTimeSwapWhis;
     public long lastTimeKillWhis;
     public int levelKillWhis;
+    public byte vip;
+    public long timevip;
 
     public int levelKillWhisDone;
     public long timeKillWhis;
@@ -349,6 +352,8 @@ public class Player {
     public int levelWhis;
 
     public long lastTimePickItem;
+    
+    public IDMark idMark;
     @Setter
     @Getter
     private CollectionBook collectionBook;
@@ -435,6 +440,9 @@ public class Player {
         event = new PlayerEvent(this);
         buyLimit = new byte[13];
         buff = Buff.NONE;
+        
+        idMark = new IDMark();
+        this.idMark = new IDMark();
     }
 
     // --------------------------------------------------------------------------
